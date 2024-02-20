@@ -25,7 +25,7 @@ class SocialCubit extends Cubit<SocialAuthState> {
   int currentIndex = 0;
   navigatorPage(context, widget) => Navigator.push(
     context, MaterialPageRoute(builder: (context) => widget));
-  List<String>titles = ['HomeScreen', 'ChatScreen', 'UserScreen', 'SettingScreen',"hhhhhhhhh"];
+ // List<String>titles = ['HomeScreen', 'ChatScreen', 'UserScreen', 'SettingScreen',"hhhhhhhhh"];
   List<BottomNavigationBarItem> bottomItems = [
     BottomNavigationBarItem(icon: Icon(Iconsax.home), label: "Home"),
     BottomNavigationBarItem(icon: Icon(Iconsax.message), label: 'Messge'),

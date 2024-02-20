@@ -69,8 +69,7 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     Future.delayed(Duration(seconds: 1), () {
       Navigator.pushReplacement(
-        context,
-        MaterialPageRoute(builder: (context) => OnBoarding()),
+        context, MaterialPageRoute(builder: (context) => OnBoarding()),
       );
     });
   }

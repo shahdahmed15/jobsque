@@ -18,6 +18,7 @@ class SignUpScreen extends StatelessWidget {
   var userNameController = TextEditingController();
   var passwordController = TextEditingController();
   var emailController = TextEditingController();
+  ////////////////////////////////////////////////////////////
   var addressController = TextEditingController();
   var phoneController = TextEditingController();
   var bioController = TextEditingController();

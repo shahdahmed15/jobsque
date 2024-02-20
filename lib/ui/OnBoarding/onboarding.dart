@@ -1,6 +1,7 @@
 import 'package:dots_indicator/dots_indicator.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:jobsquee/compant.dart';
 
 import '../../core/util/button.dart';
 import '../../shared/cubit/cubit.dart';
@@ -80,7 +81,7 @@ void initState(){
                           pagecontroller?.nextPage(duration: Duration(milliseconds: 500),
                               curve: Curves.easeIn);
                         }else{
-                          navigateTo(context,SignUpScreen());
+                          navigatorPage(context, SignUpScreen());
                         }
                       },
                         text: pagecontroller!.hasClients?(pagecontroller?.page==2?"Get started":"Next"):"Next"
@@ -98,7 +99,6 @@ void initState(){
     );
   }
 
-  void navigateTo(context , widget)=> Navigator.push(context, MaterialPageRoute(builder: (context)=> widget));
 
 
 }

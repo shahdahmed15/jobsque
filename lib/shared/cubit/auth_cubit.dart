@@ -70,14 +70,14 @@ class AuthCubit extends Cubit<SocialAuthState> {
       print(value.user!.email);
       userCreate(
         name: name,
-        about: about,
         password: password,
         email: email,
+          uId: value.user!.uid,
+          about: about,
           unvirsity: unvirsity,
           title: title,
           startyear: startyear,
           endyear: endyear,
-        uId: value.user!.uid,
         address: address,
         phone:phone,
         bio:bio
